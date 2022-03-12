@@ -5,11 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world11!
-    </h1>
+  <body class="bg-slate-900">
+    <nav class="bg-slate-800 px-6 py-4 text-2xl text-white">Navigation</nav>
+
+    <main class="my-5 mx-5 flex flex-col">
+      <h1 class="text-3xl text-gray-100">Find a quiz!</h1>
+
+      <input
+        class="my-5 bg-slate-700 px-2 py-2 rounded-md text-gray-100"
+        type="text"
+      />
+
+      <!-- Quiz Card -->
+      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
+        Quiz Name Here
+      </div>
+      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
+        Quiz Name Here
+      </div>
+      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
+        Quiz Name Here
+      </div>
+
+      <div class="rounded-full w-14 h-14 bg-blue-500 fixed mx-6 my-6 hover:bg-blue-400 transition-all hover:cursor-pointer" id="fab"></div>
+    </main>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
