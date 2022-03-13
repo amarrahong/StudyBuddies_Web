@@ -28,14 +28,27 @@ p {
     width: 30vw;
     margin-top: 5%; 
     margin-left: 10%;
+    box-shadow: 2px 2px #b1b1b1;
+}
+.small-card > span {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
 }
 
+.small-card > img {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
 .small-card {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
     border-radius: 25px;
     height: 10vh;
     width: 30vw;
     margin-top: 5%; 
     margin-left: 10%;
+    box-shadow: 2px 2px #b1b1b1;
 }
 #main-container {
     display:grid;
@@ -52,15 +65,16 @@ p {
     background: #FFE0C3;
 }
 #dayofweek-container {
-    margin-left: 20%;
+    margin-top: 5vh;
+    margin-left: 10%;
 }
 #dayofweek {
     border-radius: 50px;
     width: 20px;
-    height:auto;
+    height: auto;
     background: #6C9EFF;
     color: white;
-    padding: 5px;
+    padding: 10px;
 }
 #start-timer-button{
     background: #FFD7D7;
