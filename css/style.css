@@ -11,19 +11,34 @@
     margin-left: 5%;
 }
 
-#greetings-container span {
-    font-size: 40px;
-}
-
 #calendar-container {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     background: #EDF1FF;
     margin-left: 5%;
-    border: round white 1px;
-    height: 400px;
+    margin-top: 5%;
+    height: 180px;
     width: 400px;
     border-radius: 25px;
+}
+#groupstudy-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: #8A93E9;
+    border-radius: 25px;
+    height: 180px;
+    width: 400px;
+    color: white;
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+#dayofweek-container {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:75px;
 }
 #session-container {
     height: 100%;
@@ -31,12 +46,88 @@
     grid-row: 1 / span 4;
     grid-column: 2 / span 1;
     background:white;
+    border-radius: 25px;
+    margin-top: 5%; 
+    margin-left: 5%;
 }
 
-#calendar-container span {
+#estimate-container {
+    background: #FFE0C3;
+    border-radius: 25px;
+    
+    height: 180px;
+    width: 400px;
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+#timer-container {
+    background: #FFE0C3;
+    border-radius: 25px;
+    height: 100px;
+    width: 400px;
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+#start-container {
+    background: #FFD7D7;
+    border-radius: 25px;
+    
+    height: 100px;
+    width: 400px;
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+
+#greetings-container span {
+    font-size: 40px;
+}
+
+img {
+    width: 45px;
+    height: 40px;
+}
+#groupstudy-container img {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+#groupstudy-line-1{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    display: inline-block;
     font-size: 20px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
+}
+#groupstudy-line-2{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+#groupstudy-image-1{
+
+}
+#groupstudy-image-2{
+    margin-left: 50px;
+}
+
+#dayofweek {
+    border-radius: 50px;
+    width: 15px;
+    height:auto;
+    background: #6C9EFF;
+    color: white;
+    padding: 8px;
+    margin:auto;
+}
+
+#text {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
 body {
