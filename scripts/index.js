@@ -101,3 +101,5 @@ class Timer {
 new Timer(
       document.querySelector(".timer")
 );
+
+console.log("Is this shit working?")
