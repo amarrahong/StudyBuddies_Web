@@ -1,3 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+#main-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+#greetings-container {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 5%; 
+    margin-left: 5%;
+}
+
+#greetings-container span {
+    font-size: 40px;
+}
+
+#calendar-container {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background: #EDF1FF;
+    margin-left: 5%;
+    border: round white 1px;
+    height: 400px;
+    width: 400px;
+    border-radius: 25px;
+}
+#session-container {
+    height: 100%;
+    width: 100%;
+    grid-row: 1 / span 4;
+    grid-column: 2 / span 1;
+    background:white;
+}
+
+#calendar-container span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+body {
+    background: #D7DEF8;
+}

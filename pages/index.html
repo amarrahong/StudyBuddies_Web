@@ -8,30 +8,46 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/index.css" />
   </head>
-  <body class="bg-slate-900">
-    <nav class="bg-slate-800 px-6 py-4 text-2xl text-white">Navigation</nav>
-
-    <main class="my-5 mx-5 flex flex-col">
-      <h1 class="text-3xl text-gray-100">Find a quiz!</h1>
-
-      <input
-        class="my-5 bg-slate-700 px-2 py-2 rounded-md text-gray-100"
-        type="text"
-      />
-
-      <!-- Quiz Card -->
-      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
-        Quiz Name Here
-      </div>
-      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
-        Quiz Name Here
-      </div>
-      <div class="bg-slate-700 px-2 py-4 rounded-sm text-gray-100 my-2">
-        Quiz Name Here
+  <body>
+    <div id="main-container">
+      <div id="greetings-container">
+        <span>Good 
+          <span id="timeofday-placeholder"></span>
+          <span>,</span>
+          <p id="username-placeholder"></p>
+        </span> 
       </div>
 
-      <div class="rounded-full w-14 h-14 bg-blue-500 fixed mx-6 my-6 hover:bg-blue-400 transition-all hover:cursor-pointer" id="fab"></div>
-    </main>
+      <div id="calendar-container">
+        <span>Today: <span id="date-placeholder"></span> </span>
+      </div>
+      <div id="groupstudy-container">
+        <span>Begin a group study session</span>
+        <span>Invite friends to study with: </span>
+        <img src="./img/mail.png">
+        <img src="./img/text.png">
+      </div>
+
+      <div id="settings-container">
+        <div id="timer-container">
+          <span>Set a timer block</span>
+          <img src="./img/timer.png">
+        </div>
+        <div id="start-container">
+          <span>Start a Pomodoro</span>
+          <img src="./img/pomodoro.png"> 
+        </div>
+      </div>
+
+      <div id="session-container">
+        <p>Your Study Session:</p>
+        <img src="./img/profile.png">
+        <div id="estimate-container">
+          <span>Study session ~<span id="time-estimate-placeholder"></span>hr</span>
+        </div>
+      </div>
+            
+    </div>
     <script src="../scripts/index.js"></script>
   </body>
 </html>
