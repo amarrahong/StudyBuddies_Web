@@ -29,6 +29,7 @@ p {
     width: 30vw;
     margin-top: 5%; 
     margin-left: 10%;
+    border: none;
 }
 .big-card:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -56,7 +57,8 @@ p {
     width: 30vw;
     margin-top: 5%; 
     margin-left: 10%;
-    box-shadow: 2px 2px #b1b1b1;
+    border: none;
+    
 }
 #main-container {
     display:grid;
