@@ -51,11 +51,11 @@ class Timer {
   
     updateInterfaceControls() {
       if (this.interval === null) {
-        this.el.control.innerHTML = <span class="material-icons">play_arrow</span>;
+        this.el.control.innerHTML = `<span class="material-icons">play_arrow</span>`;
         this.el.control.classList.add("timerbtnStart");
         this.el.control.classList.remove("timerbtnStop");
       } else {
-        this.el.control.innerHTML = <span class="material-icons">pause</span>;
+        this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
         this.el.control.classList.add("timerbtnStop");
         this.el.control.classList.remove("timerbtnStart");
       }
@@ -75,7 +75,8 @@ class Timer {
   
       this.updateInterfaceControls();
     }
-  stop() {
+  
+    stop() {
       clearInterval(this.interval);
   
       this.interval = null;
@@ -85,21 +86,21 @@ class Timer {
   
     static getHTML() {
       return `
-        <span class="timer__part timer__part--minutes">00</span>
-        <span class="timer__part">:</span>
-        <span class="timer__part timer__part--seconds">00</span>
-        <button type="button" class="timerbtn timerbtnControl timerbtnStart">
-        <span class="material-icons">play_arrow</span>
-        </button>
-        <button type="button" class="timerbtn timerbtnReset">
-        <span class="material-icons">hourglass_top</span>
-        </button>
-        `;
+              <span class="timerpart timerpartMinutes">00</span>
+              <span class="timerpart">:</span>
+              <span class="timerpart timerpartSeconds">00</span>
+              <button type="button" class="timerbtn timerbtnControl timerbtnStart">
+                  <span class="material-icons">play_arrow</span>
+              </button>
+              <button type="button" class="timerbtn timerbtnReset">
+                  <span class="material-icons">timer</span>
+              </button>
+          `;
     }
-}
+  }
   
-new Timer(
+  new Timer(
       document.querySelector(".timer")
-);
+  );
 
 console.log("Is this shit working?")
