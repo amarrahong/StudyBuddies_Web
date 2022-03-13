@@ -8,6 +8,9 @@ document.getElementById("username-placeholder").innerHTML = "Simrat"
 //load from the abyss
 document.getElementById("date-placeholder").innerHTML = "3/12/2022"
 
+//load from the
+document.getElementById("streak-placeholder").innerHTML = "3"
+
 //Timer shit
 class Timer {
   constructor(root) {

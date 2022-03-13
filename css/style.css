@@ -8,21 +8,34 @@ img {
     width: 40px;
     height: 40px;
 }
+p {
+    line-height: 0.3;
+}
+#greetings-container {
+    margin-left: 5%;
+    font-size: 30px;
+    margin-bottom: 10vh;
+}
 
+#text {
+    display: inline-block;
+    margin-left: 2vw;
+    
+}
 .big-card {
     border-radius: 25px;
     height: 20vh;
-    width: 35vw;
+    width: 30vw;
     margin-top: 5%; 
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .small-card {
     border-radius: 25px;
     height: 10vh;
-    width: 35vw;
+    width: 30vw;
     margin-top: 5%; 
-    margin-left: 5%;
+    margin-left: 10%;
 }
 #main-container {
     display:grid;
@@ -38,14 +51,16 @@ img {
 #set-timer-button {
     background: #FFE0C3;
 }
+#dayofweek-container {
+    margin-left: 20%;
+}
 #dayofweek {
     border-radius: 50px;
     width: 20px;
     height:auto;
     background: #6C9EFF;
     color: white;
-    padding: 25px;
-    margin:auto;
+    padding: 5px;
 }
 #start-timer-button{
     background: #FFD7D7;
