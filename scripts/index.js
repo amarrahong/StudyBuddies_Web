@@ -17,6 +17,7 @@ class Timer {
     root.innerHTML = Timer.getHTML();
 
     this.el = {
+      hours: root.querySelector(".timerpartHours"),
       minutes: root.querySelector(".timerpartMinutes"),
       seconds: root.querySelector(".timerpartSeconds"),
       control: root.querySelector(".timerbtnControl"),
@@ -25,6 +26,7 @@ class Timer {
 
     this.interval = null;
     this.remainingSeconds = 0;
+    this.remainingMinutes = 0;
 
     this.el.control.addEventListener("click", () => {
       if (this.interval === null) {
@@ -41,14 +43,20 @@ class Timer {
         this.stop();
         this.remainingSeconds = inputMinutes * 60;
         this.updateInterfaceTime();
+      } else if (inputMinutes >= 60) {
+        this.stop();
+        this.remainingMinutes = inputMinutes / 60;
+        this.updateInterfaceTime();
       }
     });
   }
 
   updateInterfaceTime() {
+    const hours = Math.floor(this.remainingMinutes);
     const minutes = Math.floor(this.remainingSeconds / 60);
     const seconds = this.remainingSeconds % 60;
 
+    this.el.hours.textContent = hours.toString().padStart(2, "0");
     this.el.minutes.textContent = minutes.toString().padStart(2, "0");
     this.el.seconds.textContent = seconds.toString().padStart(2, "0");
   }
@@ -90,6 +98,8 @@ class Timer {
 
   static getHTML() {
     return `
+      <span class="timerpart timerpartHours">00</span>
+      <span class="timerpart">:</span>
 			<span class="timerpart timerpartMinutes">00</span>
 			<span class="timerpart">:</span>
 			<span class="timerpart timerpartSeconds">00</span>
