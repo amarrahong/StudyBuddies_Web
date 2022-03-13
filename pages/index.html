@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  
-  <body>
-    <div id="main-container">
-      <div id="greetings-container">
-        <span>Good 
-          <span id="timeofday-placeholder"></span>
-          <span>,</span>
-          <p id="username-placeholder"></p>
-        </span> 
-      </div>
 
-      <div id="calendar-container">
-        <span id="text">Today: <span id="date-placeholder"></span></span>
-        <p></p>
-        <span id="text">Your study streak: <span id="streak-placeholder"></span> days</span>
-        <hr></hr>
-        <div id="dayofweek-container">
-          <span id="dayofweek">Su</span>
-          <span id="dayofweek">Mo</span>
-          <span id="dayofweek">Tu</span>
-          <span id="dayofweek">We</span>
-          <span id="dayofweek">Th</span>
-          <span id="dayofweek">Fr</span>
-          <span id="dayofweek">Sa</span>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 
-
-      <div id="groupstudy-container">
-        <span id="groupstudy-line-1">Begin a group study session</span>
-        <span id="groupstudy-line-2">Invite friends to study with: </span>
-        <img id="groupstudy-image-1" src="/img/mail.png">
-        <img id="groupstudy-image-2" src="/img/text.png">
-      </div>
-
-      <div id="settings-container">
-        <div id="timer-container">
-          <span id="text">Set a timer block</span>
-          <img src="/img/timer.png">
-        </div>
-        <div id="start-container">
-          <span id="text">Start a Pomodoro</span>
-          <img src="/img/pomodoro.png"> 
-        </div>
-      </div>
-
-      <div id="session-container">
-        <p>Your Study Session:</p>
-        <img src="./img/profile.png">
-        <div id="estimate-container">
-          <span>Study session ~<span id="time-estimate-placeholder"></span>hr</span>
-        </div>
-        <div class="timer"></div>
-      </div>
-            
+<body>
+  <div id="main-container">
+    <div id="greetings-container">
+      <span>Good
+        <span id="timeofday-placeholder"></span>
+        <span>,</span>
+        <p id="username-placeholder"></p>
+      </span>
     </div>
-    <script src="../scripts/index.js"></script>
-  </body>
+
+    <div id="calendar-container">
+      <span id="text">Today: <span id="date-placeholder"></span></span>
+      <p></p>
+      <span id="text">Your study streak: <span id="streak-placeholder"></span> days</span>
+      <hr>
+      </hr>
+      <div id="dayofweek-container">
+        <span id="dayofweek">Su</span>
+        <span id="dayofweek">Mo</span>
+        <span id="dayofweek">Tu</span>
+        <span id="dayofweek">We</span>
+        <span id="dayofweek">Th</span>
+        <span id="dayofweek">Fr</span>
+        <span id="dayofweek">Sa</span>
+      </div>
+    </div>
+
+
+    <div id="groupstudy-container">
+      <span id="groupstudy-line-1">Begin a group study session</span>
+      <img id="groupstudy-image-3" src="/img/veggies.png">
+      <span id="groupstudy-line-2">Invite friends to study with: </span>
+      <img id="groupstudy-image-1" src="/img/mail.png">
+      <img id="groupstudy-image-2" src="/img/text.png">
+    </div>
+
+    <div id="settings-container">
+      <div id="timer-container">
+        <span id="text">Set a timer block</span>
+        <img id="timerbutton-image" src="/img/timer.png">
+      </div>
+      <div id="start-container">
+        <span id="text">Start a Pomodoro</span>
+        <img id="startbutton-image" src="/img/pomodoro.png">
+      </div>
+    </div>
+
+    <div id="session-container">
+      <p>Your Study Session:</p>
+      <img src="./img/profile.png">
+      <div id="estimate-container">
+        <span>Study session ~<span id="time-estimate-placeholder"></span>hr</span>
+      </div>
+      <div class="timer"></div>
+    </div>
+
+  </div>
+  <script src="../scripts/index.js"></script>
+</body>
+
 </html>
