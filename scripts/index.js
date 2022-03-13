@@ -45,15 +45,14 @@ class Timer {
         this.updateInterfaceTime();
       } else if (inputMinutes >= 60) {
         this.stop();
-        this.remainingMinutes = inputMinutes / 60;
+        this.remainingSeconds = inputMinutes * 60;
         this.updateInterfaceTime();
       }
     });
   }
-
   updateInterfaceTime() {
-    const hours = Math.floor(this.remainingMinutes);
-    const minutes = Math.floor(this.remainingSeconds / 60);
+    const hours = Math.floor(this.remainingSeconds / 3600);
+    const minutes = Math.floor((this.remainingSeconds - (3600*hours)) / 60);
     const seconds = this.remainingSeconds % 60;
 
     this.el.hours.textContent = hours.toString().padStart(2, "0");
