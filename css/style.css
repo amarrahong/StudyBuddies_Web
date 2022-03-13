@@ -137,4 +137,6 @@ p {
     height: 100vh;
 }
 
-
+#mainText {
+    text-align: center;
+}
