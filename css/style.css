@@ -24,7 +24,6 @@ img {
 }
 
 .big-card {
-    background: #FFE0C3;
     border-radius: 25px;
     height: 20vh;
     width: 35vw;
@@ -33,15 +32,34 @@ img {
 }
 
 .small-card {
-    background: #FFE0C3;
     border-radius: 25px;
     height: 10vh;
     width: 35vw;
     margin-top: 5%; 
     margin-left: 5%;
 }
+#calendar-container {
+    background: #EDF1FF;
+}
+#groupstudy-container {
+    background: #8A93E9;
+    color: white;
+}
+#set-timer-button {
+    background: #FFE0C3;
+}
+#dayofweek {
+    border-radius: 50px;
+    width: 20px;
+    height:auto;
+    background: #6C9EFF;
+    color: white;
+    padding: 25px;
+    margin:auto;
+}
+#start-timer-button{
 
-
+}
 #session-container {
     background-image: url("../img/background.png");
     height: auto;
