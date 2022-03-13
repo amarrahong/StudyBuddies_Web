@@ -39,7 +39,7 @@ class Timer {
           this.stop();
           this.remainingSeconds = inputMinutes * 60;
           this.updateInterfaceTime();
-        } else if (inputMinutes > 60) {
+        } else if (inputMinutes >= 60) {
           this.stop();
           this.remainingSeconds = inputMinutes * 60 * 60;
           this.updateInterfaceTime();
