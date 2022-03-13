@@ -1,22 +1,6 @@
-@font-face{
-    
-}
-#main-container {
-    display:grid;
-    grid-template-rows: 1fr;
-}
-#settings-container {
-    grid-row: 1;
-    width: 40vw;
-    background: #D7DEF8;
-    height: 100vh;
-}
-#greetings-container>span {
-    display: block;
-    margin-left: 2vw;
-    margin-top: 2vh;
-    font-size: 30px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+
 
 img {
     width: 40px;
@@ -223,6 +207,7 @@ img {
     }
     
     body {
+        font-family: 'Red Hat Display', sans-serif;
         background: #D7DEF8;
     }
 
