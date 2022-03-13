@@ -17,10 +17,10 @@ class Timer {
     root.innerHTML = Timer.getHTML();
 
     this.el = {
-      minutes: root.querySelector(".timer__part--minutes"),
-      seconds: root.querySelector(".timer__part--seconds"),
-      control: root.querySelector(".timer__btn--control"),
-      reset: root.querySelector(".timer__btn--reset")
+      minutes: root.querySelector(".timerpartMinutes"),
+      seconds: root.querySelector(".timerpartSeconds"),
+      control: root.querySelector(".timerbtnControl"),
+      reset: root.querySelector(".timerbtnReset")
     };
 
     this.interval = null;
@@ -56,12 +56,12 @@ class Timer {
   updateInterfaceControls() {
     if (this.interval === null) {
       this.el.control.innerHTML = `<span class="material-icons">play_arrow</span>`;
-      this.el.control.classList.add("timer__btn--start");
-      this.el.control.classList.remove("timer__btn--stop");
+      this.el.control.classList.add("timerbtnStart");
+      this.el.control.classList.remove("timerbtnStop");
     } else {
       this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
-      this.el.control.classList.add("timer__btn--stop");
-      this.el.control.classList.remove("timer__btn--start");
+      this.el.control.classList.add("timerbtnStop");
+      this.el.control.classList.remove("timerbtnStart");
     }
   }
 
@@ -90,13 +90,13 @@ class Timer {
 
   static getHTML() {
     return `
-			<span class="timer__part timer__part--minutes">00</span>
-			<span class="timer__part">:</span>
-			<span class="timer__part timer__part--seconds">00</span>
-			<button type="button" class="timer__btn timer__btn--control timer__btn--start">
+			<span class="timerpart timerpartMinutes">00</span>
+			<span class="timerpart">:</span>
+			<span class="timerpart timerpartSeconds">00</span>
+			<button type="button" class="timerbtn timerbtnControl timerbtnStart">
 				<span class="material-icons">play_arrow</span>
 			</button>
-			<button type="button" class="timer__btn timer__btn--reset">
+			<button type="button" class="timerbtn timerbtnReset">
 				<span class="material-icons">timer</span>
 			</button>
 		`;
