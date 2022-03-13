@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
-
-
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: #D7DEF8;
+}
 img {
     width: 40px;
     height: 40px;
@@ -21,6 +23,10 @@ img {
     width: 35vw;
     margin-top: 5%; 
     margin-left: 5%;
+}
+#main-container {
+    display:grid;
+    grid-template-columns: 40% 60%;
 }
 #calendar-container {
     background: #EDF1FF;
@@ -42,9 +48,10 @@ img {
     margin:auto;
 }
 #start-timer-button{
-
+    background: #FFD7D7;
 }
 #session-container {
+    grid-column: 2;
     background-image: url("../img/background.png");
     height: auto;
     width: auto;
@@ -55,159 +62,4 @@ img {
     height: 100vh;
 }
 
-/*
-    #main-container {
-        display: grid;
-        grid-template-columns: 40% 60%;
-    }
-    
-    #greetings-container {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        margin-top: 5%; 
-        margin-left: 5%;
-    }
-    
-    #calendar-container {
-        grid-row: 2 / span 1;
-        grid-column: 1 / span 1;
-        background: #EDF1FF;
-        margin-left: 5%;
-        margin-top: 5%;
-        height: 180px;
-        width: 600px;
-        border-radius: 25px;
-    }
-    #groupstudy-container {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        grid-template-rows: 1fr 1fr 1fr;
-        background: #8A93E9;
-        border-radius: 25px;
-        height: 180px;
-        width: 600px;
-        color: white;
-        margin-top: 5%; 
-        margin-left: 5%;
-    }
-    #dayofweek-container {
-        width: 80%;
-        margin-left: 10%;
-        height: 40%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 3%;
-    }
-    #session-container {
-    }
-    
-    #estimate-container {
-        background: #FFE0C3;
-        border-radius: 25px;
-        
-        height: 180px;
-        width: 600px;
-        margin-top: 5%; 
-        margin-left: 5%;
-    }
-    #timer-container {
-        background: #FFE0C3;
-        border-radius: 25px;
-        height: 100px;
-        width: 600px;
-        margin-top: 5%; 
-        margin-left: 5%;
-    }
-    #start-container {
-        background: #FFD7D7;
-        border-radius: 25px;
-        
-        height: 100px;
-        width: 600px;
-        margin-top: 5%; 
-        margin-left: 5%;
-    }
-    
-    #greetings-container span {
-        font-size: 40px;
-    }
-    
-    
-    #groupstudy-image-1{
-        grid-row: 3 / span 1;
-        grid-column: 2 / span 1;
-        width: 45px;
-        height: 40px;
-    }
-    #groupstudy-image-2 {
-        grid-row: 3 / span 1;
-        grid-column: 2 / span 1;
-        width: 45px;
-        height: 40px;
-    }
-    #groupstudy-line-1{
-        grid-row: 1 / span 1;
-        grid-column: 1 / span 1;
-        display: inline-block;
-        font-size: 20px;
-        margin-left: 25px;
-        margin-top: 15px;
-    }
-    #groupstudy-line-2{
-        grid-row: 3 / span 1;
-        grid-column: 1 / span 1;
-        display: inline-block;
-        font-size: 20px;
-        margin-left: 25px;
-        margin-top: 15px;
-    }
-    #groupstudy-image-1{
-        width: 45px;
-        height: 40px;
-    }
-    #groupstudy-image-2{
-        margin-left: 50px;
-        width: 45px;
-        height: 40px;
-    }
-    
-    #groupstudy-image-3{
-        margin-left: 50px;
-        grid-row: 2 / span 1;
-        width: 200px;
-        height: 90px;
-    }
-    #timerbutton-image{
-        margin-left: 300px;
-        margin-top: 30px;
-        width: 55px;
-        height: 50px;
-    }
-    #startbutton-image{
-        margin-left: 300px;
-        margin-top: 30px;
-        width: 55px;
-        height: 50px;
-    }
-    
-    #dayofweek {
-        border-radius: 50px;
-        width: 20px;
-        height:auto;
-        background: #6C9EFF;
-        color: white;
-        padding: 25px;
-        margin:auto;
-    }
-    
-    #text {
-        display: inline-block;
-        font-size: 20px;
-        margin-left: 25px;
-    }
-    
-    body {
-        font-family: 'Red Hat Display', sans-serif;
-        background: #D7DEF8;
-    }
 
