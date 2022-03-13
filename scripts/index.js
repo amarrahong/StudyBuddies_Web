@@ -105,9 +105,6 @@ class Timer {
 			<button type="button" class="timerbtn timerbtnControl timerbtnStart">
 				<span class="material-icons">play_arrow</span>
 			</button>
-			<button type="button" class="timerbtn timerbtnReset">
-				<span class="material-icons">timer</span>
-			</button>
 		`;
   }
 }
