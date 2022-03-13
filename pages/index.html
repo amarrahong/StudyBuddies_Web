@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </head>
 
-  <body>
-    <div id="main-container">
-      <div id="settings-container">
-        <a href="..\pages\index.html"><button id="greetings-container">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="settings-container">
+      <a href="..\pages\index.html"><button id="greetings-container">
           <p>Good <span id="timeofday-placeholder"></span></p>
           <p id="username-placeholder"></p>
         </button></a>
 
-        <a href="..\pages\calendar.html"><button class="big-card" id="calendar-container">
-          <p class="text">Today: <span id="date-placeholder"></span></p>
-          <p class="text">
-            Your study streak: <span id="streak-placeholder"></span> days
-          </p>
-          <hr />
+      <a href="..\pages\calendar.html"><button class="big-card" id="calendar-container">
+          <p id="line1">Today: <span id="date-placeholder"></span></p>
+          <p id="line2">
+            Your study streak: <span id="streak-placeholder"></span> days</p>
+          <hr>
           <div id="dayofweek-container">
             <span class="dayofweek">Su</span>
             <span class="dayofweek">Mo</span>
@@ -37,31 +34,33 @@
           </div>
         </button></a>
 
-        <a href="..\pages\invite.html"><button class="big-card" id="groupstudy-container">
-          <span id="groupstudy-line-1">Begin a group study session</span>
-          <br/>
+      <a href="..\pages\invite.html"><button class="big-card" id="groupstudy-container">
+          <span id="groupstudy-line-1">Invite buddies to begin a group study session:</span>
+          <br />
           <img id="groupstudy-image-3" src="../img/veggies.png" />
-          <br/>
+          <br />
           <span id="groupstudy-line-2">Invite friends to study with: </span>
           <img id="groupstudy-image-1" src="../img/mail.png" />
           <img id="groupstudy-image-2" src="../img/text.png" />
         </button></a>
 
-        <a href="..\pages\timer.html"><button class="small-card" id="set-timer-button">
-          <span class="timer-text">Set a timer block</span>
+      <a href="..\pages\timer.html"><button class="small-card" id="set-timer-button">
+          <span>Set a timer block</span>
           <img id="timer-image" src="../img/timer.png" />
         </button></a>
 
-        <a href="..\pages\session.html"><button class="small-card timerbtn timerbtnReset" id="start-timer-button">
-          <span class="session-text">Start a Pomodoro</span>
+      <a href="..\pages\session.html"><button class="small-card timerbtn timerbtnReset" id="start-timer-button">
+          <span>Start a Pomodoro</span>
           <img id="pomodoro-image" src="../img/pomodoro.png" />
         </button></a>
-      </div>
-      <div id="session-container">
-        <h1 id="mainText">Welcome to <br> Study Buddies!</h1>
-      </div>
-
-      <script src="../scripts/index.js"></script>
     </div>
-  </body>
+    <div id="session-container">
+      <p id="mainText1">Welcome to</p>
+      <p id="mainText2">Study Buddies!</p>
+    </div>
+
+    <script src="../scripts/index.js"></script>
+  </div>
+</body>
+
 </html>

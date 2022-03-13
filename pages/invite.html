@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-  </head>
 
-  <body>
-    <div id="main-container">
-      <div id="settings-container">
-        <a href="..\pages\index.html"><button id="greetings-container">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="settings-container">
+      <a href="..\pages\index.html"><button id="greetings-container">
           <p>Good <span id="timeofday-placeholder"></span></p>
           <p id="username-placeholder"></p>
         </button></a>
 
-        <a href="..\pages\calendar.html"><button class="big-card" id="calendar-container">
+      <a href="..\pages\calendar.html"><button class="big-card" id="calendar-container">
           <p class="text">Today: <span id="date-placeholder"></span></p>
           <p class="text">
             Your study streak: <span id="streak-placeholder"></span> days
@@ -37,71 +35,51 @@
           </div>
         </button></a>
 
-        <a href="..\pages\invite.html"><button class="big-card" id="groupstudy-container">
+      <a href="..\pages\invite.html"><button class="big-card" id="groupstudy-container">
           <span id="groupstudy-line-1">Begin a group study session</span>
-          <br/>
+          <br />
           <img id="groupstudy-image-3" src="../img/veggies.png" />
-          <br/>
+          <br />
           <span id="groupstudy-line-2">Invite friends to study with: </span>
           <img id="groupstudy-image-1" src="../img/mail.png" />
           <img id="groupstudy-image-2" src="../img/text.png" />
         </button></a>
 
-        <a href="..\pages\timer.html"><button class="small-card timerbtn timerbtnReset" id="set-timer-button">
+      <a href="..\pages\timer.html"><button class="small-card timerbtn timerbtnReset" id="set-timer-button">
           <span class="timer-text">Set a timer block</span>
           <img id="timer-image" src="../img/timer.png" />
         </button></a>
 
-        <a href="..\pages\session.html"><button class="small-card" id="start-timer-button">
+      <a href="..\pages\session.html"><button class="small-card" id="start-timer-button">
           <span class="session-text">Start a Pomodoro</span>
           <img id="pomodoro-image" src="../img/pomodoro.png" />
         </button></a>
+    </div>
+    <div id="session-container">
+      <p id="inviteTop">
+        Invite buddies:
+      </p>
+      <span id="copy" class="material-icons" style="margin:auto; font-size: 30px">content_copy</span>
+      <p id="inviteText">Hey! Come study with me on Study Buddies.</p>
+      <p id="inviteText">Click the link to join the session.</p>
+      <p id="inviteText">https://www.studybuddies/session123.com</p>
+      <br>
+      <p id="inviteText">Invite by text or email:</p>
+
+      <div id="inviteBoxes">
+        <img src="/img/text.png">
+        <img src="/img/mail.png">
       </div>
-      <div class="session-container">
-        <p id="inviteTop">
-          Invite buddies:
-        </p>
-        <span id="copy" class="material-icons">content_copy</span>
-        <p id="inviteText">
-          Hey! Come study with me on Study Buddies.
-          <br>
-          <br>
-          <br>
-          <br>
-          Click the link to join the session.
-          <br>
-          <br>
-          <br>
-          <br>
-          https://www.studybuddies/session123.com
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          Invite by text or email:
-        </p>
-
-        <div id="inviteBox1">
-          <p>
-            words
-          </p>
-        </div>
-
-        <div id="inviteBox2">
-          <p>
-            words2
-          </p>
-        </div>
+      <div>
+        <p style="text-align: center; font-size: 15px">Buddies Currently</p>
+        <p style="text-align: center; font-size: 15px">here (<span id="members-placeholder"></span>)</p>
+        <img src="/img/veggies.png" style="margin-left: 18vw; margin-top: -5vh; width:25vw; height:20vh">
+        <button style="margin-top: 1vh; margin-left: 18vw; box-shadow: 2px 3px #bbbbbb; border-radius: 25px; padding-left: 8vw; padding-right: 8vw; padding-top: 4vh; padding-bottom: 4vh;background-color:blanchedalmond; border: none;">Begin a session</button>
       </div>
 
       <script src="../scripts/index.js"></script>
     </div>
-  </body>
+    </div>
+</body>
+
 </html>

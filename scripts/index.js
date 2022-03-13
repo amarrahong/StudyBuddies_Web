@@ -11,6 +11,9 @@ document.getElementById("date-placeholder").innerHTML = "3/12/2022"
 //load from the
 document.getElementById("streak-placeholder").innerHTML = "3"
 
+//load from 
+document.getElementById("members-placeholder").innerHTML = "0"
+
 //Timer shit
 class Timer {
   constructor(root) {
