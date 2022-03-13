@@ -103,13 +103,14 @@ p {
 
 #groupstudy-image-1 {
     grid-row: 3 / span 1;
-    margin-left: -60%;
+    margin-top: 10%;
+    margin-left: -70%;
 }
 #groupstudy-image-2 {
     grid-row: 3 / span 1;
     width: 120%;
     height: 110%;
-    margin-left: -50%;
+    margin-left: -60%;
 }
 #groupstudy-image-3 {
     grid-row: 2 / span 1;
@@ -140,7 +141,10 @@ p {
 }
 
 #mainText {
+    font-size: 60px;
     text-align: center;
+    position: relative;
+    top: 40%;
 }
 
 #pomodoro-image {
