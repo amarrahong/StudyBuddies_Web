@@ -95,23 +95,28 @@ p {
 }
 
 #groupstudy-line-2 {
+    display: inline-block;
     grid-row: 3 / span 1;
-    margin-left: 4vw;
+    margin-left: 2vw;
     margin-top: 2vh;
 }
 
 #groupstudy-image-1 {
     grid-row: 3 / span 1;
+    margin-left: -60%;
 }
 #groupstudy-image-2 {
     grid-row: 3 / span 1;
-    width: 100%;
+    width: 120%;
+    height: 110%;
+    margin-left: -50%;
 }
 #groupstudy-image-3 {
     grid-row: 2 / span 1;
     width: 20vw;
     height: 10vh;
     margin-left: 5vw;
+    margin-top: 5%;
 }
 .dayofweek {
     border-radius: 50px;
@@ -127,8 +132,6 @@ p {
 #session-container {
     grid-column: 2;
     background-image: url("../img/background.png");
-    height: auto;
-    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1;
@@ -141,11 +144,26 @@ p {
 }
 
 #pomodoro-image {
+    margin-left: -19%;
+    margin-top: -19%;
     height: 100%;
     width: 150%;
 }
 
 #timer-image {
+    margin-left: -19%;
+    margin-top: -19%;
     height: 100%;
     width: 150%;
+}
+
+.timer-text {
+    margin-left: 5%;
+    margin-top: 9%;
+    
+}
+
+.session-text {
+    margin-left: 5%;
+    margin-top: 9%;
 }
