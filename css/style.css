@@ -169,6 +169,23 @@ a {
     top: 40%;
 }
 
+#calendarText {
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+#calendar-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+    width: 80%;
+    height: 50%;
+}
+
 #pomodoro-image {
     margin-left: -19%;
     margin-top: -19%;
