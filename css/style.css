@@ -34,6 +34,10 @@ p {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
+.small-card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .small-card > span {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
