@@ -21,7 +21,7 @@ class Timer {
       minutes: root.querySelector(".timerpartMinutes"),
       seconds: root.querySelector(".timerpartSeconds"),
       control: root.querySelector(".timerbtnControl"),
-      reset: root.querySelector(".timerbtnReset")
+      reset: document.querySelector(".timerbtnReset")
     };
 
     this.interval = null;
