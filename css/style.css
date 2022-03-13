@@ -12,6 +12,17 @@ img {
 p {
     line-height: 0.3;
 }
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
 #greetings-container {
     margin-left: 5%;
     font-size: 30px;
@@ -94,8 +105,8 @@ p {
     background: #FFE0C3;
 }
 #dayofweek-container {
-    margin-top: 5vh;
-    margin-left: 10%;
+    margin-top: 3vh;
+    margin-left: 13%;
 }
 
 #groupstudy-line-1 {
@@ -109,19 +120,19 @@ p {
     display: inline-block;
     grid-row: 3 / span 1;
     margin-left: 2vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
 #groupstudy-image-1 {
     grid-row: 3 / span 1;
     margin-top: 10%;
-    margin-left: -70%;
+    margin-left: -120%;
 }
 #groupstudy-image-2 {
     grid-row: 3 / span 1;
-    width: 120%;
+    width: 200%;
     height: 110%;
-    margin-left: -60%;
+    margin-left: -160%;
 }
 #groupstudy-image-3 {
     grid-row: 2 / span 1;
